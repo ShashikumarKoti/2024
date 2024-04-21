@@ -22,6 +22,8 @@ public class UserInterceptor implements HandlerInterceptor {
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
             throws APIException {
         System.out.println("preHandle() of UserInterceptor");
+        System.out.println("Method Type: " + request.getMethod());
+        System.out.println("Request URL: " + request.getRequestURI());
         String userId = request.getHeader("USERID");
         String country = request.getHeader("COUNTRY");
         validateHeaders(userId, country);
