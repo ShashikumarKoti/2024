@@ -1,5 +1,6 @@
 package com.skoti.learning.config;
 
+import com.skoti.learning.interceptors.TestInterceptor;
 import com.skoti.learning.interceptors.UserInterceptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
@@ -11,8 +12,12 @@ public class UserInterceptorConfig extends WebMvcConfigurerAdapter {
     @Autowired
     private UserInterceptor userInterceptor;
 
+    @Autowired
+    private TestInterceptor testInterceptor;
+
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(userInterceptor);
+        registry.addInterceptor(userInterceptor).order(2).excludePathPatterns("/v1/api/users");;
+        registry.addInterceptor(testInterceptor).order(1).addPathPatterns("/**").excludePathPatterns("/v1/orders");
     }
 }
