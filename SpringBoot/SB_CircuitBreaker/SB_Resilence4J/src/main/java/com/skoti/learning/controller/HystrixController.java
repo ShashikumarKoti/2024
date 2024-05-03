@@ -2,10 +2,8 @@ package com.skoti.learning.controller;
 
 import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import io.github.resilience4j.retry.annotation.Retry;
-import org.slf4j.helpers.CheckReturnValue;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -19,13 +17,13 @@ public class HystrixController {
 
   @Autowired private RestTemplate restTemplate;
 
-  private int attempt=1;
+  private int attempt = 1;
 
   @GetMapping("/greet")
-  //@CircuitBreaker(name = "userService", fallbackMethod = "bookMyShowFallBack")
+  // @CircuitBreaker(name = "userService", fallbackMethod = "bookMyShowFallBack")
   @Retry(name = "userService", fallbackMethod = "bookMyShowFallBack")
   public String greet() throws InterruptedException {
-    System.out.println("retry method called "+attempt++ +" times "+" at "+new Date());
+    System.out.println("retry method called " + attempt++ + " times " + " at " + new Date());
     String restTemplateForObject =
         restTemplate.getForObject("http://localhost:8181/bookMyShow/getBooking", String.class);
     return restTemplateForObject;
