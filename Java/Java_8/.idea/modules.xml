@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Java_8.iml" filepath="$PROJECT_DIR$/.idea/Java_8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LamdaExpressions/LamdaExpressions.iml" filepath="$PROJECT_DIR$/LamdaExpressions/LamdaExpressions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MethodReferences/MethodReferences.iml" filepath="$PROJECT_DIR$/MethodReferences/MethodReferences.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Streams/Streams.iml" filepath="$PROJECT_DIR$/Streams/Streams.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,151 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f444e2e-ecd6-40b6-ac21-fb4d134eea5b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../MethodReferences/src/com/skoti/constructor/reference/ConstructorReferenceDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MethodReferences/src/com/skoti/constructor/reference/EmployeeManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MethodReferences/src/com/skoti/method/reference/BasicDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MethodReferences/src/com/skoti/method/reference/employee/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MethodReferences/src/com/skoti/method/reference/employee/EmployeeDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MethodReferences/src/com/skoti/method/reference/employee/EmployeeMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MethodReferences/src/com/skoti/method/reference/employee/EmployeeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MethodReferences/src/com/skoti/method/reference/employee/InstanceMethodReferenceDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MethodReferences/src/com/skoti/method/reference/employee/StaticMethodReferenceDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MethodReferences/src/com/skoti/method/reference/employee/StaticMethodReferenceEmployeeDemo.java" afterDir="false" />
+    <list default="true" id="3e081057-808e-49f0-a231-8467c8b042a0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
-  <component name="ProjectId" id="2gBaLcYmTT4OkecClyfXMEDcKSw" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2gCVzQ0Lh0isVGlW6heMPeQrW9w" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.FilterDemo.executor": "Run",
-    "Application.FilterMapDemo.executor": "Run",
-    "Application.ForEachDemo.executor": "Run",
-    "Application.ForEachListDemo.executor": "Run",
-    "Application.ForEachMapDemo.executor": "Run",
-    "Application.MapReduceDemo.executor": "Run",
-    "Application.MapReduceEmployeeDemo.executor": "Run",
-    "Application.MapReduceStringDemo.executor": "Run",
-    "Application.MapVsFlatMap.executor": "Run",
-    "Application.OptionalDemo.executor": "Run",
-    "Application.OptionalDemoWithStreams.executor": "Run",
-    "Application.SortListDemo.executor": "Run",
-    "Application.SortListOfCustomObject.executor": "Run",
-    "Application.SortingMapDemo.executor": "Run",
-    "Application.SortingMapOfCustomObject.executor": "Run",
-    "Application.TaxService.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "S:/sk_workspace/2024_learning/2024/Java/Java_8/LamdaExpressions"
+    "last_opened_file_path": "S:/sk_workspace/2024_learning/New folder/2024/Java/Java_8"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.MapReduceEmployeeDemo">
-    <configuration name="MapReduceEmployeeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.skoti.map_reduce.MapReduceEmployeeDemo" />
-      <module name="Streams" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.skoti.map_reduce.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MapReduceIntegerDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.skoti.map_reduce.MapReduceIntegerDemo" />
-      <module name="Streams" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.skoti.map_reduce.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MapReduceStringDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.skoti.map_reduce.MapReduceStringDemo" />
-      <module name="Streams" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.skoti.map_reduce.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OptionalDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.skoti.optional.OptionalDemo" />
-      <module name="Streams" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.skoti.optional.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OptionalDemoWithStreams" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.skoti.optional.OptionalDemoWithStreams" />
-      <module name="Streams" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.skoti.optional.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.MapReduceEmployeeDemo" />
-        <item itemvalue="Application.MapReduceStringDemo" />
-        <item itemvalue="Application.MapReduceIntegerDemo" />
-        <item itemvalue="Application.OptionalDemoWithStreams" />
-        <item itemvalue="Application.OptionalDemo" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="3f444e2e-ecd6-40b6-ac21-fb4d134eea5b" name="Changes" comment="" />
-      <created>1715173369854</created>
+      <changelist id="3e081057-808e-49f0-a231-8467c8b042a0" name="Changes" comment="" />
+      <created>1715201856175</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1715173369854</updated>
+      <updated>1715201856175</updated>
     </task>
     <servers />
   </component>
