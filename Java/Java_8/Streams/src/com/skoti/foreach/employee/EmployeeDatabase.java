@@ -9,10 +9,26 @@ public class EmployeeDatabase {
 
     public List<Employee> getEmployeeDetails() {
         return Arrays.asList(
-                new Employee(176, "Shashikumar", "Dev", 3000000.0),
-                new Employee(259, "Shwetha", "Test", 2000000.0),
-                new Employee(547, "Nitin", "Fresher", 500000.0),
-                new Employee(653, "Advith", "Fresher", 300000.0));
+                new Employee(176, "Shashikumar", "Dev", 50000.0),
+                new Employee(259, "Shwetha", "Test", 30000.0),
+                new Employee(547, "Ved", "Fresher", 50000.0),
+                new Employee(653, "Sassy", "Fresher", 30000.0));
+    }
+
+    public List<Employee> getEmployeeDetailsWithDuplicates() {
+        return Arrays.asList(
+                new Employee(176, "Shashikumar", "Dev", 50000.0),
+                new Employee(259, "Shwetha", "Test", 30000.0),
+                new Employee(547, "Shashikumar", "Fresher", 50000.0),
+                new Employee(653, "Sassy", "Fresher", 30000.0));
+    }
+
+    public List<Employee> getEmployeeDetailsWithDuplicateDepartments() {
+        return Arrays.asList(
+                new Employee(176, "Shashikumar", "IT", 50000.0),
+                new Employee(259, "Shwetha", "ADMIN", 25000.0),
+                new Employee(547, "Shashikumar", "IT", 30000.0),
+                new Employee(653, "Sassy", "ADMIN", 45000.0));
     }
 
     public List<Employee> getManyEmployeeDetails() {
