@@ -19,6 +19,12 @@ public class Employee {
         this.department = department;
     }
 
+    public Employee(String name, int age, Double salary) {
+        this.name = name;
+        this.age = age;
+        this.salary = salary;
+    }
+
     public String getName() {
         return name;
     }
