@@ -33,5 +33,12 @@ public class PlayerComparableDemo {
 
 
         System.out.println(playerSet);
+        System.out.println("=======================");
+
+        Collections.sort(playerList, Comparator.naturalOrder());
+        System.out.println(playerList);
+        System.out.println("=======================");
+        Collections.sort(playerList, Comparator.reverseOrder());
+        System.out.println(playerList);
     }
 }
