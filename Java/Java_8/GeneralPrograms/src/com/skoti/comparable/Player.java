@@ -14,16 +14,16 @@ public class Player implements Comparable<Player> {
 //    }
 
     //sort by ranking
-//    @Override
-//    public int compareTo(Player player) {
-//        return Integer.compare(this.ranking, player.getRanking()) ;
-//    }
-
-    //sort by salary descending
     @Override
     public int compareTo(Player player) {
-        return Double.compare(player.salary, salary);
+        return Integer.compare(this.ranking, player.getRanking()) ;
     }
+
+    //sort by salary descending
+//    @Override
+//    public int compareTo(Player player) {
+//        return Double.compare(player.salary, salary);
+//    }
 
     public Player(int ranking, Double salary, int age, String playerName) {
         this.ranking = ranking;
