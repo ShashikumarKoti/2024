@@ -1,4 +1,4 @@
-package com.skoti.foreach.employee;
+package com.skoti.listprograms.employee;
 
 import java.util.List;
 import java.util.stream.Collectors;
