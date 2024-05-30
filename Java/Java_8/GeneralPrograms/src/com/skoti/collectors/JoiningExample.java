@@ -15,7 +15,7 @@ public class JoiningExample {
         String joinedStr2 = integerList.stream().map(integer -> integer.toString()).collect(Collectors.joining(","));
         System.out.println("Joined String2: "+joinedStr2);
 
-        String joinedStr3 = integerList.stream().map(integer -> integer.toString()).collect(Collectors.joining(",", "{", "}"));
+        String joinedStr3 = integerList.stream().map(integer -> integer.toString()).collect(Collectors.joining(",", "[", "]"));
         System.out.println("Joined String2: "+joinedStr3);
     }
 }
