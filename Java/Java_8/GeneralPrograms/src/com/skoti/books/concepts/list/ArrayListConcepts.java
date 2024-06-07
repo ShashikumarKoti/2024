@@ -1,4 +1,4 @@
-package com.skoti.books.concepts;
+package com.skoti.books.concepts.list;
 
 import java.util.ArrayList;
 import java.util.Collections;

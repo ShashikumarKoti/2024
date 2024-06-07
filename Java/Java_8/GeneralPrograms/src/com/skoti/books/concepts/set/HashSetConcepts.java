@@ -1,23 +1,24 @@
-package com.skoti.books.concepts;
-import java.util.LinkedHashSet;
+package com.skoti.books.concepts.set;
+
+import java.util.HashSet;
 import java.util.Set;
 
-public class LinkedHashSetConcepts {
+public class HashSetConcepts {
 
     public static void main(String[] args) {
 
-        Set stringSet = new LinkedHashSet();
+        Set stringSet = new HashSet();
         stringSet.add("Ram");
         stringSet.add("Zeeshan");
         stringSet.add("Abhi");
         stringSet.add(null);
         stringSet.add("Zeeshan");
 
-        System.out.println("Use LinkedHashSet to develop caches");
-        System.out.println("LinkedHashSet - Duplicates are not allowed | Insertion order maintained | null is allowed | Implements Serializable, Cloneable interface | Heterogeneous objects allowed");
+        System.out.println("Use HashSet if frequent operation is searching");
+        System.out.println("HashSet - Duplicates are not allowed | insertion order not maintained | null is allowed | Implements Serializable, Cloneable interface | Heterogeneous objects allowed");
         System.out.println(stringSet);
 
-        Set mixedObjectsSet = new LinkedHashSet();
+        Set mixedObjectsSet = new HashSet();
         mixedObjectsSet.add(5);
         mixedObjectsSet.add("Zeeshan");
         mixedObjectsSet.add("Abhi");
@@ -26,7 +27,7 @@ public class LinkedHashSetConcepts {
 
         System.out.println(mixedObjectsSet);
 
-        Set integerSet = new LinkedHashSet();
+        Set integerSet = new HashSet();
         integerSet.add(5);
         integerSet.add(7);
         integerSet.add(2);
@@ -36,3 +37,4 @@ public class LinkedHashSetConcepts {
         System.out.println(integerSet);
     }
 }
+

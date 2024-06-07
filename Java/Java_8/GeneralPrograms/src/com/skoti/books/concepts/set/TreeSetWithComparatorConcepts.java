@@ -1,4 +1,4 @@
-package com.skoti.books.concepts;
+package com.skoti.books.concepts.set;
 
 import java.util.Comparator;
 import java.util.Set;
