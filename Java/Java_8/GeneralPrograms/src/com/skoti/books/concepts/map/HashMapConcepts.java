@@ -3,16 +3,17 @@ package com.skoti.books.concepts.map;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
-import java.util.Set;
 
 public class HashMapConcepts {
 
     public static void main(String[] args) {
 
+        System.out.println("null values are allowed in HashMap");
         var stringIntegerMap = new HashMap();
         stringIntegerMap.put("zeeshan",500);
         stringIntegerMap.put("nagarjun",100);
         stringIntegerMap.put("ballaiah", 700);
+        stringIntegerMap.put("chiru", null);
         stringIntegerMap.put("chiru", 400);
         stringIntegerMap.put("ballaiah", 900);
 

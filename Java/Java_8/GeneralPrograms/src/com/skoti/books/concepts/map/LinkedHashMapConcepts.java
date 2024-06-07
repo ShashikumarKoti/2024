@@ -6,10 +6,12 @@ public class LinkedHashMapConcepts {
 
     public static void main(String[] args) {
 
+        System.out.println("null values are allowed in LinkedHashMap");
         Map stringIntegerMap = new LinkedHashMap();
         stringIntegerMap.put("zeeshan",500);
         stringIntegerMap.put("nagarjun",100);
         stringIntegerMap.put("ballaiah", 700);
+        stringIntegerMap.put("ballaiah", null);
         stringIntegerMap.put("chiru", 400);
         stringIntegerMap.put("ballaiah", 900);
 
