@@ -1,0 +1,7 @@
+node -v      : to check node version
+npn -v       : to check npm version
+npm install -g @angular/cli@12   : to install angular 12 version
+ng version   : to check installed angular version
+ng new <project_name> : to create new angular project_name
+ng serve   : to start angular application. This has to be executed from inside the project.
+set NODE_OPTIONS=--openssl-legacy-provider  : if any Error: error:0308010C:digital envelope routines::unsupported  error observed during <ng serve>
