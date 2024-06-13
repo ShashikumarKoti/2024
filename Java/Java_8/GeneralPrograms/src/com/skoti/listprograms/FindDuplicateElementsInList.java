@@ -12,6 +12,7 @@ public class FindDuplicateElementsInList {
 
     public static void main(String[] args) {
 
+        System.out.println("Find duplicate items");
         List<String> employeesNameList = new EmployeeDatabase().getEmployeeDetailsWithDuplicates().stream().map(Employee::getName).collect(Collectors.toList());
         System.out.println(employeesNameList);
         Set<String> employeeSet = new HashSet<>();
