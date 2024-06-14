@@ -33,6 +33,17 @@ ng g c <component name> --inline-template   : command to generate component with
 ng g c <component name> --inline-template --inline-style  : command to generate component with BOTH inline style and inline template.
 
 
+What is Module:
+Module refers to a complete feature of an app. Ex: user-authentocation is a feature of any web app. So user-authentocation can be called one module.
+Module can have multiple components, services(for api call) and pipes(helper classes) inside it...Ex: user-authentocation module can have login, signup, forgot password etc components
+After creating a module, register the moulde in main app.module.ts file
+Next, export the component created inside Module in the in the newly created module.ts file.
+
+Note: A component created in a Module can be reused. But reusing entire Module will not make any sense, as it is a feature in itself.
+
+
+
+
 
  
 File structure for begineers:
