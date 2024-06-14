@@ -12,4 +12,21 @@ export class UserListComponent implements OnInit {
   ngOnInit(): void {
   }
 
+getName()
+{
+  alert("function called");
+}
+getNameWithParams(name: string)
+{
+  alert(name);
+}
+getNameWithParamsAsInt(num: number)
+{
+  alert(num);
+}
+getNameWithAnyParams(name: string, num: number)
+{
+  alert(name);
+  alert(num);
+}
 }
