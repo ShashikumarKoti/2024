@@ -24,6 +24,14 @@ ng build  : used to build the application.. It will generate dist folder. This d
 What is Component:
 Components are building blocks of web page. To display different sections in a web page. like header component, profile component, main content component
 
+Inline style and Inline template:
+	If we use Inline style and Inline template, then app.commands.css and app.component.html will not used. The code which is supposed to be written in these 2 files shall we written
+	in app.component.ts file
+Inline style/template should be used when we have minimal changes in html and css and when most of the config are picked from main style.css
+ng g c <component name> --inline-style   	: command to generate component with inline style ONLY
+ng g c <component name> --inline-template   : command to generate component with inline template ONLY
+ng g c <component name> --inline-template --inline-style  : command to generate component with BOTH inline style and inline template.
+
 
 
  
