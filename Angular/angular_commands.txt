@@ -6,7 +6,24 @@ ng version   : to check installed angular version
 ng new <project_name> : to create new angular project_name
 ng serve   : to start angular application. This has to be executed from inside the project.
 set NODE_OPTIONS=--openssl-legacy-provider  : if any Error: error:0308010C:digital envelope routines::unsupported  error observed during <ng serve>
+npm install --save-dev @angular-devkit/build-angular   :  run this command for below error	
+				 An unhandled exception occurred: Cannot find module '@angular-devkit/build-angular/package.json
+				 
+				 
+ng generate component <component name>  : to create component	
+ng g c <component name>  : shorform to create component
+ng g m <module name>	 : shorform to create module.   Module can contain any number of components
+ng g c <module name>/<component name> : to create component inside module
+ng g class <folder name to create class>/<class name> : to create class inside a particular folder.
+		This command geneartes 2 classes.
+			1.<classname>.ts
+			2.<classname>.spec.ts   - used for test cases
+ng g interface 	<folder name to create interface>/<interface name>	 : 	to create interface inside a particular folder.
+ng build  : used to build the application.. It will generate dist folder. This dist folder has to be placed in server and then run.
 
+
+
+ 
 File structure for begineers:
 package.json  - contain dependencies/// Similar to pom.xml in java.... application will not run if this file is deleted
 node_modules  - contain libraries... //Similar to external libraries in java
