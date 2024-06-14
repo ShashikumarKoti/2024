@@ -10,6 +10,7 @@ import { ComponentWithInlineStyleComponent } from './component-with-inline-style
 import { ComponentWithInlineTemplateComponent } from './component-with-inline-template/component-with-inline-template.component';
 import { ComponentWithInlineTemplateAndInlineStyleComponent } from './component-with-inline-template-and-inline-style/component-with-inline-template-and-inline-style.component';
 import { EventsLearningComponent } from './events-learning/events-learning.component';
+import { InputBoxComponent } from './input-box/input-box.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { EventsLearningComponent } from './events-learning/events-learning.compo
     ComponentWithInlineStyleComponent,
     ComponentWithInlineTemplateComponent,
     ComponentWithInlineTemplateAndInlineStyleComponent,
-    EventsLearningComponent
+    EventsLearningComponent,
+    InputBoxComponent
   ],
   imports: [
     BrowserModule,

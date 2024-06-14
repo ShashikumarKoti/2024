@@ -1,0 +1,24 @@
+<br />
+<input type="text" #box (keyup)="getTextBoxValue(box.value)" placeholder="Enter name" name="userName" />
+<p>
+    Box value is : {{displayVal}}
+</p>
+
+
+<input type="text" #box1 placeholder="Enter name" name="userName" />
+<button (click)="getTextBoxValueOnButtonClick(box1.value)">Click</button>
+<p>
+    Box value after button click is : {{displayValOnClick}}
+</p>
+
+<input type="text" #box2 placeholder="Enter name" name="userName" />
+<button (click)="getTextBoxValueOnButtonClick(box2.name)">Click me</button>
+<p>
+    Get name attribute value after button click is : {{displayValOnClick}}
+</p>
+
+<input type="text" #box3 placeholder="Enter name" name="userName" />
+<button (click)="getTextBoxValueOnButtonClick(box3.placeholder)">Click me</button>
+<p>
+    Get placeholder value after button click is : {{displayValOnClick}}
+</p>
