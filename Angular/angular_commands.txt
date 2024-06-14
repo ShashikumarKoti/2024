@@ -59,6 +59,13 @@ Note: we can add multiple events to a single element
 Get TextBox value and print.
 we can get text box value from placeholder, name attribute, from value and from Property Binding
 
+Style:
+common styles are written in style.css which are used across multiple components.
+Specific style attribites are written in the specific component's .css file.
+
+Property Binding:
+
+
 
  
 File structure for begineers:
