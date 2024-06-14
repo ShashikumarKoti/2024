@@ -11,6 +11,7 @@ import { ComponentWithInlineTemplateComponent } from './component-with-inline-te
 import { ComponentWithInlineTemplateAndInlineStyleComponent } from './component-with-inline-template-and-inline-style/component-with-inline-template-and-inline-style.component';
 import { EventsLearningComponent } from './events-learning/events-learning.component';
 import { InputBoxComponent } from './input-box/input-box.component';
+import { CounterExampleComponent } from './counter-example/counter-example.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { InputBoxComponent } from './input-box/input-box.component';
     ComponentWithInlineTemplateComponent,
     ComponentWithInlineTemplateAndInlineStyleComponent,
     EventsLearningComponent,
-    InputBoxComponent
+    InputBoxComponent,
+    CounterExampleComponent
   ],
   imports: [
     BrowserModule,

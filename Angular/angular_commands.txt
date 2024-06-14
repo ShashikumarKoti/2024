@@ -57,7 +57,9 @@ mouseleave : event called when after we mouse over a particular thing and move c
 Note: we can add multiple events to a single element
 
 Get TextBox value and print.
-from placeholder, name attribute, from value
+we can get text box value from placeholder, name attribute, from value and from Property Binding
+
+
  
 File structure for begineers:
 package.json  - contain dependencies/// Similar to pom.xml in java.... application will not run if this file is deleted
