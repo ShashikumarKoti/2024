@@ -1,0 +1,11 @@
+<button (click)="getData('Hello')">Call Event</button>
+<br/><br/>
+<input type="text" (keyup)="getData('Bye')" placeholder="event keyup" /><br/>
+<input type="text" #box (keyup)="getDataAsTypedInSearchBox(box.value)" placeholder="type anything here" /><br/>
+<input type="text" #box1 (keydown)="getDataAsTypedInSearchBox(box1.value)" placeholder="event keydown" /><br/>
+<input type="text" #box2 (blur)="getDataAsTypedInSearchBox(box2.value)" placeholder="event blur" /><br/>
+
+<h2 (mouseover)="getMouseOverData()">Mouse over me</h2>
+<h2 (mouseleave)="getMouseLeaveData('Mouse leave event called')">Mouse Leave</h2>
+
+<input type="text" #box4 (blur)="multipleEvents(box4.value)" (mouseover)="multipleEvents(box4.value)" placeholder="multiple events" /><br/>

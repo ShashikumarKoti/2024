@@ -47,8 +47,15 @@ Note: From Angular12 , we need to pass the datatype also of the params used in a
 In previous versions of angular, the strict value present in tsconfig.json was false hence no error if datatype is not defined. From Angular12 strict value is set to true by default.
 
 
+Events:
+call functions on mouse hover, blur, keyup, click of a button , click on a link, enter value in input box etc are all called events.
+keyup event : event called when any key is pressed and also released.  Note: after releasing the key only the event is called.
+keydown event : event called when any key is just pressed.
+blur : event is called when we enter a value in input box and pointer/mouse is clicked somewhere out of the box . i.e focus is shifted to somewhere else.
+mouseover : event called when we mouse over a particular thing
+mouseleave : event called when after we mouse over a particular thing and move cursor away from it.
 
-
+Note: we can add multiple events to a single element
  
 File structure for begineers:
 package.json  - contain dependencies/// Similar to pom.xml in java.... application will not run if this file is deleted

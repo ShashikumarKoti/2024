@@ -9,6 +9,7 @@ import { UserListComponent } from './user-list/user-list.component';
 import { ComponentWithInlineStyleComponent } from './component-with-inline-style/component-with-inline-style.component';
 import { ComponentWithInlineTemplateComponent } from './component-with-inline-template/component-with-inline-template.component';
 import { ComponentWithInlineTemplateAndInlineStyleComponent } from './component-with-inline-template-and-inline-style/component-with-inline-template-and-inline-style.component';
+import { EventsLearningComponent } from './events-learning/events-learning.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ComponentWithInlineTemplateAndInlineStyleComponent } from './component-
     UserListComponent,
     ComponentWithInlineStyleComponent,
     ComponentWithInlineTemplateComponent,
-    ComponentWithInlineTemplateAndInlineStyleComponent
+    ComponentWithInlineTemplateAndInlineStyleComponent,
+    EventsLearningComponent
   ],
   imports: [
     BrowserModule,
