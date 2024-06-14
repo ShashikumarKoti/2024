@@ -21,6 +21,9 @@ ng g class <folder name to create class>/<class name> : to create class inside a
 ng g interface 	<folder name to create interface>/<interface name>	 : 	to create interface inside a particular folder.
 ng build  : used to build the application.. It will generate dist folder. This dist folder has to be placed in server and then run.
 
+What is Component:
+Components are building blocks of web page. To display different sections in a web page. like header component, profile component, main content component
+
 
 
  
