@@ -15,6 +15,7 @@ import { CounterExampleComponent } from './counter-example/counter-example.compo
 import { PropertyBindingDemoComponent } from './property-binding-demo/property-binding-demo.component';
 import { ForLoopsLearningComponent } from './for-loops-learning/for-loops-learning.component';
 import { StyleBindingLearningComponent } from './style-binding-learning/style-binding-learning.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { StyleBindingLearningComponent } from './style-binding-learning/style-bi
     CounterExampleComponent,
     PropertyBindingDemoComponent,
     ForLoopsLearningComponent,
-    StyleBindingLearningComponent
+    StyleBindingLearningComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
