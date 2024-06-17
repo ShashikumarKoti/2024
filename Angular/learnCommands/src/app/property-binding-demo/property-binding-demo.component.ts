@@ -16,5 +16,12 @@ export class PropertyBindingDemoComponent{
   title2 ="If-else condition"
   show=true
   showScenario2=true
+  showScenario3="yess";
+
+  title3="Multiple if-else condition";
+  color="green";
+
+  title4="switch case"
+  colorForSwitchCase="bluesss";
 
 }

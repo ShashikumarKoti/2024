@@ -23,3 +23,34 @@
     <button>Bye Bye</button>
     <h1>Else block scenario2 executed</h1>
 </ng-template >
+
+<h1 *ngIf="showScenario3=='yes'; then ifBlockScenario3 else elseBlockScenario3"></h1>
+
+<ng-template #ifBlockScenario3>
+    <input type="text" name="first-name" value="Search anything here - If condition"><br/>
+    <h1>If Block Scenario3 executed</h1>
+</ng-template >
+    
+<ng-template #elseBlockScenario3>
+    <input type="text" name="first-name" value="Search anything here - Else condition">
+    <h1>Else block scenario3 executed</h1>
+</ng-template >
+
+<h1>{{title3}}</h1>
+<ng-template [ngIf]="color==='red'">
+    <h2 style="color: red;">Red colour</h2>
+</ng-template>
+<ng-template [ngIf]="color==='green'">
+    <h2 style="color: green;">Green colour</h2>
+</ng-template>
+<ng-template [ngIf]="color==='blue'">
+    <h2 style="color: blue;">Blue colour</h2>
+</ng-template>
+
+<h1>{{title4}}</h1>
+<div [ngSwitch]="colorForSwitchCase">
+    <h1 *ngSwitchCase="'red'" style="color: red;">Red color displayed for Switch case</h1>
+    <h1 *ngSwitchCase="'green'" style="color: green;">Green color displayed for Switch case</h1>
+    <h1 *ngSwitchCase="'blue'" style="color: blue;">Blue color displayed for Switch case</h1>
+    <h1 *ngSwitchDefault style="color: orange;">Default color</h1>
+</div>
