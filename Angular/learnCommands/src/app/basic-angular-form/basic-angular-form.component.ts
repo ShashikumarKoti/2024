@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {NgForm } from '@angular/forms';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-basic-angular-form',
@@ -14,11 +14,17 @@ export class BasicAngularFormComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  userData:any={};
+  userData: any = {};
 
-  getData(data : NgForm) {
+  display = false
+
+  getData(data: NgForm) {
     console.warn(data);
-    this.userData=data;
+    this.userData = data;
+  }
+
+  toggle() {
+    this.display = !this.display;
   }
 
 }

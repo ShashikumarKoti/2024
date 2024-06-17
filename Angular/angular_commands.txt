@@ -104,6 +104,8 @@ Header creation.
 
 Basic form:
 import FormsModule in your component's module.ts file and register it in imports
+Toggle button basics.
+
 
 
 
