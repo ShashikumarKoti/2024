@@ -64,7 +64,9 @@ common styles are written in style.css which are used across multiple components
 Specific style attribites are written in the specific component's .css file.
 
 Property Binding:
-
+It is used to changes the value of properties or attributes. Ex: numbers, strings, objects and Boolean ALSO
+Interpolation: Is again used to change value of properties or attribites but it doesnt work for Boolean values.
+Note: Always use Property binding if any value of the properties/attribites needs to be changed.
 
 
  
