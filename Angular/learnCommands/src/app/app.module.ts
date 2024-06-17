@@ -14,6 +14,7 @@ import { InputBoxComponent } from './input-box/input-box.component';
 import { CounterExampleComponent } from './counter-example/counter-example.component';
 import { PropertyBindingDemoComponent } from './property-binding-demo/property-binding-demo.component';
 import { ForLoopsLearningComponent } from './for-loops-learning/for-loops-learning.component';
+import { StyleBindingLearningComponent } from './style-binding-learning/style-binding-learning.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ForLoopsLearningComponent } from './for-loops-learning/for-loops-learni
     InputBoxComponent,
     CounterExampleComponent,
     PropertyBindingDemoComponent,
-    ForLoopsLearningComponent
+    ForLoopsLearningComponent,
+    StyleBindingLearningComponent
   ],
   imports: [
     BrowserModule,

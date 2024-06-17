@@ -21,6 +21,27 @@ ng g class <folder name to create class>/<class name> : to create class inside a
 ng g interface 	<folder name to create interface>/<interface name>	 : 	to create interface inside a particular folder.
 ng build  : used to build the application.. It will generate dist folder. This dist folder has to be placed in server and then run.
 
+File structure for begineers:
+package.json  - contain dependencies/// Similar to pom.xml in java.... application will not run if this file is deleted
+node_modules  - contain libraries... //Similar to external libraries in java
+src folder:
+	app  : contains component code which can be reused
+	assets :  helps to keep images  //Similar to resources in java
+	environments:  to main profiles for deploying in different environments like dev,release, staging, prod.//Similar to profiles in java
+	index.html : this is the file which loads first in the project. 
+	main.ts   : it bootstraps angular application on the html file. i.e to load the entire angular app into an html file.
+	style.css   : used for global css
+	
+File structure for advance level:
+	package-lock.json : it contain packages structure in details. i.e any if any dependencies are further dependent on any other dependencies, then those details 	are also maintained here.  application will still run if this file is deleted, as it will load all dependencies again from package.json
+	angular.json : this is the configuration file for oyr application.
+	tsconfig.json  :  all typeScript global configuration are maintained here.
+	tsconfig.app.json : configuration specific to application are maintained here.
+	tsconfig.spec.json : configuration required for testing are maintained here.
+	.browserslistrc  : contains details of supported and unsupported browsers.
+	karma.config.js  : mainly used for test cases.
+	polyfills.ts:    libraries required for browsers are added here so that the content looks same in all browser types.
+
 What is Component:
 Components are building blocks of web page. To display different sections in a web page. like header component, profile component, main content component
 
@@ -76,28 +97,15 @@ Syntax: *ngFor="let <some variable> of <variable to be looped>"
 <ol> - stands for ordered list
 
 
+Style binding:
+If type of style to be applied comes from .ts file and to be changed dynamically based on certain conditions, then we use style binding.
+
+
+
+
 
  
-File structure for begineers:
-package.json  - contain dependencies/// Similar to pom.xml in java.... application will not run if this file is deleted
-node_modules  - contain libraries... //Similar to external libraries in java
-src folder:
-	app  : contains component code which can be reused
-	assets :  helps to keep images  //Similar to resources in java
-	environments:  to main profiles for deploying in different environments like dev,release, staging, prod.//Similar to profiles in java
-	index.html : this is the file which loads first in the project. 
-	main.ts   : it bootstraps angular application on the html file. i.e to load the entire angular app into an html file.
-	style.css   : used for global css
-	
-File structure for advance level:
-	package-lock.json : it contain packages structure in details. i.e any if any dependencies are further dependent on any other dependencies, then those details 	are also maintained here.  application will still run if this file is deleted, as it will load all dependencies again from package.json
-	angular.json : this is the configuration file for oyr application.
-	tsconfig.json  :  all typeScript global configuration are maintained here.
-	tsconfig.app.json : configuration specific to application are maintained here.
-	tsconfig.spec.json : configuration required for testing are maintained here.
-	.browserslistrc  : contains details of supported and unsupported browsers.
-	karma.config.js  : mainly used for test cases.
-	polyfills.ts:    libraries required for browsers are added here so that the content looks same in all browser types.
+
 	
 	
 	

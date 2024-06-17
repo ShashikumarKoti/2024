@@ -1,0 +1,11 @@
+<p>Basic style approach</p>
+<h1 style="color: green;">{{title}}</h1>
+
+<p>Style Binding approach</p>
+<h1 [style.color]="colorToBeDisplayed">{{greet}}</h1>
+
+<p>Style Binding approach with Button click</p>
+<button (click)="updateColor()">Update color</button>
+
+<p style="text-decoration: underline;">Style Binding approach with multiple styles</p>
+<h1 [style.color]="colorToBeDisplayed" [style.backgroundColor]="bgColor">{{greet}}</h1>
