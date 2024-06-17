@@ -68,6 +68,8 @@ It is used to changes the value of properties or attributes. Ex: numbers, string
 Interpolation: Is again used to change value of properties or attribites but it doesnt work for Boolean values.
 Note: Always use Property binding if any value of the properties/attribites needs to be changed.
 
+If-else condition using *ngIf and ng-template
+
 
  
 File structure for begineers:

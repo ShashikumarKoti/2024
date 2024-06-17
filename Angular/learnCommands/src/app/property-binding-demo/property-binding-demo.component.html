@@ -2,3 +2,24 @@
 <input type="text" name="first-name" value={{name}} disabled={{disable}}>
 <br/> <br/>
 <input type="text" name="last-name" [value]=name [disabled]=disable>
+
+<h1>{{title2}}</h1>
+<h1 *ngIf="show else elseBlock">
+    This is displayed only if show property is true
+</h1>
+
+<ng-template #elseBlock>
+    <h1>Else condition is displayed if show property is false</h1>
+</ng-template>
+
+<h1 *ngIf="showScenario2; then ifBlockScenario2 else elseBlockScenario2"></h1>
+
+<ng-template #ifBlockScenario2>
+    <button>Hello there</button>
+    <h1>If Block Scenario2 executed</h1>
+</ng-template >
+    
+<ng-template #elseBlockScenario2>
+    <button>Bye Bye</button>
+    <h1>Else block scenario2 executed</h1>
+</ng-template >

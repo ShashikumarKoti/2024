@@ -13,4 +13,8 @@ export class PropertyBindingDemoComponent{
   name = "Shashi";
   disable = false;
 
+  title2 ="If-else condition"
+  show=true
+  showScenario2=true
+
 }
