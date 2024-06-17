@@ -13,6 +13,7 @@ import { EventsLearningComponent } from './events-learning/events-learning.compo
 import { InputBoxComponent } from './input-box/input-box.component';
 import { CounterExampleComponent } from './counter-example/counter-example.component';
 import { PropertyBindingDemoComponent } from './property-binding-demo/property-binding-demo.component';
+import { ForLoopsLearningComponent } from './for-loops-learning/for-loops-learning.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { PropertyBindingDemoComponent } from './property-binding-demo/property-b
     EventsLearningComponent,
     InputBoxComponent,
     CounterExampleComponent,
-    PropertyBindingDemoComponent
+    PropertyBindingDemoComponent,
+    ForLoopsLearningComponent
   ],
   imports: [
     BrowserModule,

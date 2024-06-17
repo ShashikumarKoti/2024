@@ -68,7 +68,13 @@ It is used to changes the value of properties or attributes. Ex: numbers, string
 Interpolation: Is again used to change value of properties or attribites but it doesnt work for Boolean values.
 Note: Always use Property binding if any value of the properties/attribites needs to be changed.
 
-If-else condition using *ngIf and ng-template
+If-else condition using *ngIf and ng-template , multiple if-else condition and switch case.
+
+Array and loops:
+Syntax: *ngFor="let <some variable> of <variable to be looped>"
+<ul> - stands for unordered list
+<ol> - stands for ordered list
+
 
 
  

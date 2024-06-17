@@ -1,0 +1,28 @@
+<h1>Arrays and loops</h1>
+
+<p>For loop for strings</p>
+<h2 *ngFor="let item of users">
+    Name is {{item}}
+</h2>
+
+<br />
+<p>For loop for Objects</p>
+<h2 *ngFor="let data of userDetails">
+    UserDetails :: Name:{{data.name}} Age:{{data.age}} email:{{data.email}}
+</h2>
+
+
+<h1>{{title}}</h1>
+<ul *ngFor="let details of employeeDetails">
+    <li>{{details.name}}</li>
+    <li>{{details.id}}</li>
+    <li>{{details.phoneNumbers}}</li>
+</ul>
+
+<ul *ngFor="let personDtls of personDetails">
+    <li>{{personDtls.name}}</li>
+    <li>{{personDtls.id}}</li>
+    <ul *ngFor="let contactDetails of personDtls.phoneNums">
+        <li>{{contactDetails}}</li>
+    </ul>
+</ul>
