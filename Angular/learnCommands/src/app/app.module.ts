@@ -16,6 +16,8 @@ import { PropertyBindingDemoComponent } from './property-binding-demo/property-b
 import { ForLoopsLearningComponent } from './for-loops-learning/for-loops-learning.component';
 import { StyleBindingLearningComponent } from './style-binding-learning/style-binding-learning.component';
 import { HeaderComponent } from './header/header.component';
+import { BasicAngularFormComponent } from './basic-angular-form/basic-angular-form.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -32,11 +34,13 @@ import { HeaderComponent } from './header/header.component';
     PropertyBindingDemoComponent,
     ForLoopsLearningComponent,
     StyleBindingLearningComponent,
-    HeaderComponent
+    HeaderComponent,
+    BasicAngularFormComponent
   ],
   imports: [
     BrowserModule,
-    UserAuthModule
+    UserAuthModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -100,6 +100,11 @@ Syntax: *ngFor="let <some variable> of <variable to be looped>"
 Style binding:
 If type of style to be applied comes from .ts file and to be changed dynamically based on certain conditions, then we use style binding.
 
+Header creation.
+
+Basic form:
+import FormsModule in your component's module.ts file and register it in imports
+
 
 
 
