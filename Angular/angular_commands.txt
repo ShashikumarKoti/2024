@@ -20,6 +20,7 @@ ng g class <folder name to create class>/<class name> : to create class inside a
 			2.<classname>.spec.ts   - used for test cases
 ng g interface 	<folder name to create interface>/<interface name>	 : 	to create interface inside a particular folder.
 ng build  : used to build the application.. It will generate dist folder. This dist folder has to be placed in server and then run.
+ng add @ng-bootstrap/ng-bootstrap   : to install bootstrap.
 
 File structure for begineers:
 package.json  - contain dependencies/// Similar to pom.xml in java.... application will not run if this file is deleted
@@ -105,6 +106,18 @@ Header creation.
 Basic form:
 import FormsModule in your component's module.ts file and register it in imports
 Toggle button basics.
+
+
+Bootstrap:
+It is a library/framework which makes our application responsive. Like to display a page properly in laptop, mobile. tab etc without any issues.
+Command to install bootstrap:
+ng add @ng-bootstrap/ng-bootstrap
+
+@angular/localise : To display application in different languages like Englist, Chinese, French
+
+Reference to learn bootstrap:
+https://ng-bootstrap.github.io/#/components/collapse/examples
+
 
 
 

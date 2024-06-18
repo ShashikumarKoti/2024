@@ -1,0 +1,90 @@
+<h1>Boostrap with Angular</h1>
+<ngb-alert [dismissible]="false">
+	<strong>Warning!</strong> Better check yourself, you're not looking too good.
+</ngb-alert>
+
+
+<ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+	<ngb-panel title="Simple">
+		<ng-template ngbPanelContent>
+			Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+			officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+			moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
+			keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+			vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+			heard of them accusamus labore sustainable VHS.
+		</ng-template>
+	</ngb-panel>
+	<ngb-panel>
+		<ng-template ngbPanelTitle>
+			<span>&#9733; <b>Fancy</b> title &#9733;</span>
+		</ng-template>
+		<ng-template ngbPanelContent>
+			Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+			officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+			moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
+			keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+			vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+			heard of them accusamus labore sustainable VHS.
+		</ng-template>
+	</ngb-panel>
+	<ngb-panel title="Disabled" [disabled]="true">
+		<ng-template ngbPanelContent>
+			Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon
+			officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf
+			moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim
+			keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+			vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't
+			heard of them accusamus labore sustainable VHS.
+		</ng-template>
+	</ngb-panel>
+</ngb-accordion>
+
+
+<ngb-accordion>
+    <ngb-panel title="Test" [disabled]="false">
+        <ng-template ngbPanelContent >
+            Module refers to a complete feature of an app. Ex: user-authentocation is a feature of any web app. So user-authentocation can be called one module.
+        </ng-template>
+    </ngb-panel>
+</ngb-accordion>
+
+<ngb-accordion>
+    <ngb-panel [disabled]="false">
+        <ng-template ngbPanelTitle >
+			<span>&#9733; <b>Disclaimer</b> &#9733;</span>
+		</ng-template>
+        <ng-template ngbPanelContent >
+            Module refers to a complete feature of an app. Ex: user-authentocation is a feature of any web app. So user-authentocation can be called one module.
+        </ng-template>
+    </ngb-panel>
+</ngb-accordion>
+
+<p>
+	<button
+		type="button"
+		class="btn btn-outline-primary"
+		(click)="collapse.toggle()"
+		[attr.aria-expanded]="!isCollapsed"
+		aria-controls="collapseExample"
+	>
+		Toggle with Function
+	</button>
+	<button
+		type="button"
+		class="btn btn-outline-primary ms-2"
+		(click)="isCollapsed = ! isCollapsed"
+		[attr.aria-expanded]="!isCollapsed"
+		aria-controls="collapseExample"
+	>
+		Toggle with Two Way Binding
+	</button>
+</p>
+<div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
+	<div class="card">
+		<div class="card-body">You can collapse this card by clicking one Toggle button</div>
+	</div>
+</div>
+
+<br/><br/>
+

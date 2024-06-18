@@ -18,6 +18,8 @@ import { StyleBindingLearningComponent } from './style-binding-learning/style-bi
 import { HeaderComponent } from './header/header.component';
 import { BasicAngularFormComponent } from './basic-angular-form/basic-angular-form.component';
 import { FormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BootstrapLearningComponent } from './bootstrap-learning/bootstrap-learning.component';
 
 @NgModule({
   declarations: [
@@ -35,12 +37,14 @@ import { FormsModule } from '@angular/forms';
     ForLoopsLearningComponent,
     StyleBindingLearningComponent,
     HeaderComponent,
-    BasicAngularFormComponent
+    BasicAngularFormComponent,
+    BootstrapLearningComponent
   ],
   imports: [
     BrowserModule,
     UserAuthModule,
-    FormsModule
+    FormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
