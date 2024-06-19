@@ -121,7 +121,10 @@ https://ng-bootstrap.github.io/#/components/collapse/examples
 Material UI:
 Used to make our application responsive.
 Used to give rich look to the application.
- Material UI has performance issues as it will have more css code and styles and html code to giev rich look to the web page.
+Material UI has performance issues as it will have more css code and styles and html code to giev rich look to the web page.
+
+Reference for Material UI:
+https://material.angular.io/components/badge/overview
 
 
 
