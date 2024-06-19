@@ -7,4 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tasks';
+
+  todolist: any[] = [];
+
+  addTask(item: string) {
+
+    this.todolist.push({ id: this.todolist.length, name: item });
+    console.warn(this.todolist);
+  }
+
+  removeTask(id: number) {
+    this.todolist = this.todolist.filter(item => item.id !== id);
+    console.warn(id);
+  }
 }
