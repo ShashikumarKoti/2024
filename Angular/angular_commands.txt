@@ -1,3 +1,5 @@
+Youtube link : https://www.youtube.com/watch?v=PSRhmtiRNm4&list=PL8p2I9GklV45--5t7_N4lveUI6Y31vQ6C
+
 commands:
 node -v      : to check node version
 npn -v       : to check npm version
@@ -126,9 +128,32 @@ Material UI has performance issues as it will have more css code and styles and 
 Reference for Material UI:
 https://material.angular.io/components/badge/overview
 
+Two way binding:
+At a give time,Updating and displaying a given property is called Two way binding.
 
+Template Reference variable:
+use of '#' for any variable refers to template reference variable
 
+TypeScript for Angular:
+TypeScript is an extended and advanced version of javascript.
+Ex: 1.in TS we can assign datatype to a variable to avoid errors.
+	2. parameters inside a function are required to define their datatype as well.
+Browser will not understand TS...angular will convert TS to Javascript and render.
 
+Datatypes in TS:
+1.number 
+2.string 
+3.boolean 
+4.any
+5.define 2 types  ex: (number | boolean)...when a particular variable accepts any of 2 types as param.
+
+Pipes in angular:
+Used to transform the dataformat a variable.
+Ex: make the string case sensitive.
+	change date format to a string.
+	change currency
+	to apply locale
+Note: pipes can be used ONLY in .html file
 
 
 

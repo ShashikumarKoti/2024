@@ -22,3 +22,12 @@
 
 <h3>{{data}}</h3>
 <app-childcomponent (getDataFromChild)="getDataFromChildComponent($event)"></app-childcomponent>
+
+<h1>Two  way binding</h1>
+<input type="text" [(ngModel)]="name"/>
+<h2>{{name}}</h2>
+
+<h1>Template reference variable</h1>
+<input type="text" #box placeholder="Enter user name">
+<button (click)="getValue(box.value)">Click me</button><br/>
+<button (click)="getValue2(box)">Click me too</button>

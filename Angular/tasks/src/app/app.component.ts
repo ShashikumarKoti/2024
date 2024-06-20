@@ -10,6 +10,7 @@ export class AppComponent {
   firstInputFromParent=10;
   secondInputFromParent=20;
   todolist: any[] = [];
+  name:any;
   
   userDetails=[
     {name : 'Shashi', email: 'sk@gmail.com'},
@@ -38,6 +39,13 @@ export class AppComponent {
     this.data=item;
   }
 
+  getValue(item:any) {
+console.warn(item)
+  }
+
+  getValue2(item:HTMLInputElement) {
+    console.warn(item)
+      }
 
 
 }
