@@ -7,8 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tasks';
-
+  firstInputFromParent=10;
+  secondInputFromParent=20;
   todolist: any[] = [];
+  
+  userDetails=[
+    {name : 'Shashi', email: 'sk@gmail.com'},
+    {name : 'Arun', email: 'ag@gmail.com'},
+    {name : 'Ram', email: 'rp@gmail.com'},
+  ]
 
   addTask(item: string) {
 
@@ -20,4 +27,17 @@ export class AppComponent {
     this.todolist = this.todolist.filter(item => item.id !== id);
     console.warn(id);
   }
+
+  updateChildComponent() {
+    this.firstInputFromParent= Math.floor(Math.random()*10);
+    this.secondInputFromParent= Math.floor(Math.random()*10);
+  }
+
+  data="x";
+  getDataFromChildComponent(item:string) {
+    this.data=item;
+  }
+
+
+
 }

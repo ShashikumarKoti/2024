@@ -9,3 +9,16 @@
     {{item.name}} <button (click)="removeTask(item.id)">Delete task</button>
   </li>
 </ul>
+
+<h1>Send data to child component from parent conponent</h1>
+<app-child [passFirstDataToChild]="firstInputFromParent"  [passSecondDataToChild]="secondInputFromParent"></app-child>
+<button (click)=" updateChildComponent()">Update child component</button><br/> <br/>
+
+<ul *ngFor="let user of userDetails">
+  <app-user-details [item]='user'></app-user-details>
+</ul>
+
+<br/><br/>
+
+<h3>{{data}}</h3>
+<app-childcomponent (getDataFromChild)="getDataFromChildComponent($event)"></app-childcomponent>
