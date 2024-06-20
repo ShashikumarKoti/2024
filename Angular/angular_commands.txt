@@ -23,6 +23,7 @@ ng g class <folder name to create class>/<class name> : to create class inside a
 ng g interface 	<folder name to create interface>/<interface name>	 : 	to create interface inside a particular folder.
 ng build  : used to build the application.. It will generate dist folder. This dist folder has to be placed in server and then run.
 ng add @ng-bootstrap/ng-bootstrap   : to install bootstrap.
+ng g p <foldername>/<pipename>  : to create custom pipe
 
 File structure for begineers:
 package.json  - contain dependencies/// Similar to pom.xml in java.... application will not run if this file is deleted
@@ -154,6 +155,9 @@ Ex: make the string case sensitive.
 	change currency
 	to apply locale
 Note: pipes can be used ONLY in .html file
+
+Command to create custom pipes
+ng g p <foldername>/<pipename>
 
 
 
