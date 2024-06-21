@@ -4,11 +4,23 @@ import { AboutComponent } from './about/about.component';
 import { UserComponent } from './user/user.component';
 import { HomeComponent } from './home/home.component';
 import { NoPageFoundComponentComponent } from './no-page-found-component/no-page-found-component.component';
+import { AboutCompanyComponent } from './about-company/about-company.component';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 const routes: Routes = [
   {
     path:'about',
-    component: AboutComponent
+    component: AboutComponent,
+    children:[
+      {
+        path:'company',
+        component:AboutCompanyComponent
+      },
+      {
+        path:'me',
+        component:AboutMeComponent
+      }
+    ]
   },
   {
     path:'user',

@@ -198,8 +198,7 @@ Dynamic routing:
 To pass dynamic values in the url path is called dynamic routing.
 Used to fetch some data from database. 
 
-
-
+Child routing:
 
  
 
