@@ -190,6 +190,14 @@ Command to create custome directives
 ng g directive <foldername>/<directive-name>
 Note: How do you change the value of a element using a directive ?
 
+Routing:
+How to know if routing is enabled in our application ?
+While creatinf=g new project, click 'Y' for enable routing and in app folder verify that app-routing.module.ts file is created.
+
+Dynamic routing:
+To pass dynamic values in the url path is called dynamic routing.
+Used to fetch some data from database. 
+
 
 
 
