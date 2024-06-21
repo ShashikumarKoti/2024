@@ -159,6 +159,30 @@ Note: pipes can be used ONLY in .html file
 Command to create custom pipes
 ng g p <foldername>/<pipename>
 
+Forms:
+Why use forms:
+1. To submit any kind of information to database.
+2. But angular CANNOT connect to database
+3. So we send data to API
+4. then API will update the data to database
+5. Example:
+	1. Login
+	2. Sign up
+	3. Post
+	4. Google search is also a type of form.
+	
+Types of forms in Angular:
+1. Template driven form
+	Here mostly work is done in Component template(i.e component.html files).
+2. Reactive form
+	Here mostly work is done in Component class(i.e, component.ts class).
+
+Data flow with forms:
+Template -> Class -> Service(API) -> Database
+
+
+Directives in Angular:
+
 
 
 

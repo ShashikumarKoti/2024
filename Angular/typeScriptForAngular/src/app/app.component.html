@@ -20,3 +20,32 @@
 
 <h1>Custom pipes</h1>
 <h2>{{20 | usdInr: 100}}</h2>
+
+
+<app-template-driven-form></app-template-driven-form>
+<h1>Template driven form</h1>
+<form #loginForm="ngForm" (ngSubmit)=userLogin(loginForm.value)>
+    <input type="text" placeholder="Enter Name" name="name" ngModel> <br /><br />
+    <input type="password" placeholder="Enter password" name="password" ngModel><br /><br />
+    <button>Login</button>
+
+</form>
+
+
+<button (click)=userLogin(loginForm.value)>Button Outside Form</button>
+
+<br>
+<h1>Reactive form</h1>
+<app-reactive-form></app-reactive-form>
+<form [formGroup]="loginFormFromReactive" (ngSubmit)=loginUserFromReactive()>
+    <input type="text" placeholder="Enter name" name="name" formControlName="userName"><br>
+    <span style="color: red;" *ngIf="userValidator && userValidator.invalid && userValidator.touched">Please enter
+        username</span><br>
+    <input type="email" placeholder="Enter email" name="email" formControlName="email"><br>
+    <span style="color: red;" *ngIf="emailValidator && emailValidator.invalid && emailValidator.touched">Please enter
+        email</span><br>
+    <input type="password" placeholder="Enter password" name="password" formControlName="password"><br>
+    <span style="color: red;" *ngIf="pwdValidator && pwdValidator.invalid && pwdValidator.touched">Please enter
+        password with min length</span><br>
+    <button [disabled]="loginFormFromReactive.invalid">Login from Reactive</button>
+</form>
