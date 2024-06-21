@@ -6,14 +6,16 @@ import { UsdInrPipe } from './pipes/usd-inr.pipe';
 import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
 import { FormsModule} from '@angular/forms';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component'
-import { ReactiveFormsModule} from '@angular/forms'
+import { ReactiveFormsModule} from '@angular/forms';
+import { RedElementDirective } from './red-element.directive'
 
 @NgModule({
   declarations: [
     AppComponent,
     UsdInrPipe,
     TemplateDrivenFormComponent,
-    ReactiveFormComponent
+    ReactiveFormComponent,
+    RedElementDirective
   ],
   imports: [
     BrowserModule,

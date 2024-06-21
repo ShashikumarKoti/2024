@@ -24,6 +24,7 @@ ng g interface 	<folder name to create interface>/<interface name>	 : 	to create
 ng build  : used to build the application.. It will generate dist folder. This dist folder has to be placed in server and then run.
 ng add @ng-bootstrap/ng-bootstrap   : to install bootstrap.
 ng g p <foldername>/<pipename>  : to create custom pipe
+ng g directive <foldername>/<directive-name> : command to generate directive
 
 File structure for begineers:
 package.json  - contain dependencies/// Similar to pom.xml in java.... application will not run if this file is deleted
@@ -182,6 +183,12 @@ Template -> Class -> Service(API) -> Database
 
 
 Directives in Angular:
+*ngIf, *ngFor, *ngSwitch etc are called directives.
+Directives are classes which give additional features to our html files.
+Ex: hide an element, color an element, put an element in a loop etc.
+Command to create custome directives
+ng g directive <foldername>/<directive-name>
+Note: How do you change the value of a element using a directive ?
 
 
 
