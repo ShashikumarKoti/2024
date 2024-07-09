@@ -39,4 +39,9 @@ public class GroceryItemController {
     public void deleteGroceryById(@RequestParam("id")  String id){
         groceryItemService.deleteGroceryItem(id);
     }
+
+    @PutMapping("/grocery/update")
+    public void updateItem(@RequestParam("name") String name, @RequestParam("quantity") float quantity) {
+        groceryItemService.updateItemQuantity(name, quantity);
+    }
 }
