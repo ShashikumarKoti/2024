@@ -45,11 +45,20 @@ public class User implements Cloneable {
                 '}';
     }
 
+//    @Override
+//    protected User clone() throws CloneNotSupportedException {
+//        User user = null;
+//        user = (User) super.clone();
+//        user.address = (Address) this.address.clone();
+//        return user;
+//    }
+
     @Override
-    protected User clone() throws CloneNotSupportedException {
+    protected User clone() throws CloneNotSupportedException{
         User user = null;
-        user = (User) super.clone();
-        user.address = (Address) this.address.clone();
+        user = (User)super.clone();
+        user.address = (Address)this.address.clone();
         return user;
+
     }
 }

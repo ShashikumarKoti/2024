@@ -45,7 +45,12 @@ public class ArrayListConcepts {
 
         //To get synchronizedList
         List simpleList = new ArrayList<>();
+        simpleList.add(null);
+        simpleList.add(5);
+        simpleList.add("Shashi");
+        simpleList.add(7);
         List synchronizedList = Collections.synchronizedList(simpleList);
+        System.out.println(synchronizedList);
 
 
     }

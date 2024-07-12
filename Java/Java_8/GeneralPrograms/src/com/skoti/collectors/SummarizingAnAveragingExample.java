@@ -19,6 +19,7 @@ public class SummarizingAnAveragingExample {
         IntSummaryStatistics ageSummary = personList.stream().collect(Collectors.summarizingInt(Person::getAge));
         System.out.println(ageSummary);
 
+
         DoubleSummaryStatistics salarySummary = personList.stream().collect(Collectors.summarizingDouble(Person::getSalary));
         System.out.println(salarySummary);
 

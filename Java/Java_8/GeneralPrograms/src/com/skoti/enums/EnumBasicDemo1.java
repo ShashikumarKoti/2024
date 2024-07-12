@@ -2,7 +2,10 @@ package com.skoti.enums;
 
 enum Month {
 
-    JAN, FEB, MAR, APRIL, MAY, JUNE
+    JAN, FEB, MAR, APRIL, MAY, JUNE;
+    Month() {
+        System.out.println("Month constructor called");
+    }
 }
 public class EnumBasicDemo1 {
 
@@ -19,8 +22,7 @@ public class EnumBasicDemo1 {
 
         System.out.println(WEEK_DAYS.FRI);
 
-        Month monthInSwitch = Month.APRIL;
-        switch (monthInSwitch) {
+        switch (Month.APRIL) {
 
             case JAN:
                 System.out.println("January");

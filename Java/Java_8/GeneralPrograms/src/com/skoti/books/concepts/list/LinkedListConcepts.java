@@ -8,24 +8,24 @@ public class LinkedListConcepts {
 
     public static void main(String[] args) {
 
-        List stringLinkedist = new LinkedList();
-        stringLinkedist.add("Ram");
-        stringLinkedist.add("Zeeshan");
-        stringLinkedist.add("Abhi");
-        stringLinkedist.add(null);
-        stringLinkedist.add(1);
-        stringLinkedist.add("Zeeshan");
+        List stringLinkedList = new LinkedList();
+        stringLinkedList.add("Ram");
+        stringLinkedList.add("Zeeshan");
+        stringLinkedList.add("Abhi");
+        stringLinkedList.add(null);
+        stringLinkedList.add(1);
+        stringLinkedList.add("Zeeshan");
 
 
         System.out.println("Use LinkedList ONLY if frequent operation is insertion/deletion");
         System.out.println("LinkedList - Implements Serializable and Cloneable interface | Duplicates are allowed | insertion order maintained | null ia allowed | heterogeneous objects allowed");
-        System.out.println(stringLinkedist);
+        System.out.println(stringLinkedList);
 
         List integerLinkedList = new LinkedList<>();
         integerLinkedList.add(5);
         integerLinkedList.add(2);
         integerLinkedList.add(10);
-        stringLinkedist.add(null);
+        stringLinkedList.add(null);
         integerLinkedList.add(8);
         integerLinkedList.add(4);
         integerLinkedList.add(2);

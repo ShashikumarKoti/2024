@@ -1,6 +1,7 @@
 package com.skoti.collectors;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -24,5 +25,7 @@ public class MappingExample {
 
         Optional<Integer> maxAge = personList.stream().collect(Collectors.mapping(Person::getAge, Collectors.maxBy(Integer::compareTo)));
         System.out.println(maxAge.get());
+
+
     }
 }

@@ -22,7 +22,7 @@ public class ArraysSortSearchingConcepts {
         System.out.println();
 
         System.out.println(Arrays.binarySearch(str, "T"));
-        System.out.println(Arrays.binarySearch(str, "J"));
+        System.out.println(Arrays.binarySearch(str, "O"));
 
         System.out.println();
 

@@ -21,9 +21,16 @@ public class MaxByMinByExample {
         Optional<Employee> maxSalaryEmp  = employeeList.stream().collect(Collectors.maxBy(Comparator.comparing(Employee::getSalary)));
         System.out.println("Max salary : " + (maxSalaryEmp.isPresent() ? maxSalaryEmp.get() : "Not applicable"));
 
+        Optional<Double> collect = employeeList.stream().collect(Collectors.mapping(Employee::getSalary, Collectors.maxBy(Double::compareTo)));
+        System.out.println(collect.get());
+
+        Optional<Employee> max = employeeList.stream().max(Comparator.comparing(Employee::getSalary));
+        System.out.println(max);
 
         Optional<Employee> minAgeEmp = employeeList.stream().collect(Collectors.minBy(Comparator.comparing(Employee::getAge)));
         System.out.println("Min age : " + (minAgeEmp.isPresent() ? minAgeEmp.get() : "Not applicable"));
+
+        employeeList.stream().collect(Collectors.maxBy(Comparator.comparing(Employee::getSalary)));
 
     }
 }

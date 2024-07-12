@@ -29,11 +29,11 @@ public class CarComparableDemo {
         workers.put("Aman", 2000);
         workers.put("Tapas", 2500);
 
-        //Approach 1
-//        TreeMap<String, Integer> stringIntegerTreeMap = new TreeMap<>(workers);
-//        for (String workerKey : stringIntegerTreeMap.keySet()) {
-//            System.out.println("Sorting by keys: " + workerKey);
-//        }
+    //    Approach 1
+        TreeMap<String, Integer> stringIntegerTreeMap = new TreeMap<>(workers);
+        for (String workerKey : stringIntegerTreeMap.keySet()) {
+            System.out.println("Sorting by keys: " + workerKey);
+        }
 
         //approach 2
         List<Map.Entry<String,Integer>> workersList = new ArrayList<>(workers.entrySet());
@@ -61,6 +61,18 @@ public class CarComparableDemo {
             System.out.println("Sorting by values: " + "Key:" + workerValue.getKey() + " value: " + workerValue.getValue());
         }
 
+
+        System.out.println("test map");
+        HashMap<String, Integer> testMap = new HashMap<>();
+        testMap.put("one",1);
+        testMap.put("two", 2);
+        testMap.put("seven",7);
+
+        ArrayList<Map.Entry<String, Integer>> entryArrayList = new ArrayList<>(testMap.entrySet());
+        Collections.sort(entryArrayList, Map.Entry.comparingByValue());
+        for (Map.Entry<String, Integer> integerEntry : entryArrayList) {
+            System.out.println("Sorting by keys: " + "Key:" + integerEntry.getKey() + " value: " + integerEntry.getValue());
+        }
 
     }
 }

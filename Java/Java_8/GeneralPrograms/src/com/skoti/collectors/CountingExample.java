@@ -21,5 +21,7 @@ public class CountingExample {
 
         Long employeesListCount = employeeList.stream().collect(Collectors.counting());
         System.out.println(employeesListCount);
+
+       System.out.println( employeeList.size());
     }
 }

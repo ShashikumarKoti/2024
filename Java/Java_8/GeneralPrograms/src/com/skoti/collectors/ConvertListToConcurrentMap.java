@@ -7,7 +7,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-public class ConvertLlistToConcurrentMap {
+public class ConvertListToConcurrentMap {
 
     public static void main(String[] args) {
         List<Book> bookList = new ArrayList<>();

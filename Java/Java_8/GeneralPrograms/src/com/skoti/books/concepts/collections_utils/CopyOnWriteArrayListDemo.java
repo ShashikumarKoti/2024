@@ -1,4 +1,6 @@
-package com.skoti.books.concepts.concurrent_collections;
+package com.skoti.books.concepts.collections_utils;
+
+import com.skoti.books.concepts.concurrent_collections.ConcurrentModificationExceptionDemo;
 
 import java.util.Iterator;
 import java.util.concurrent.CopyOnWriteArrayList;
@@ -16,6 +18,7 @@ public class CopyOnWriteArrayListDemo extends Thread{
         }
         System.out.println("Child thread updating list");
         list.add("C");
+        list.add("D");
     }
 
     public static void main(String[] args) throws InterruptedException {
@@ -24,7 +27,7 @@ public class CopyOnWriteArrayListDemo extends Thread{
         list.add("A");
         list.add("B");
 
-        ConcurrentModificationExceptionDemo concurrentModificationExceptionDemo = new ConcurrentModificationExceptionDemo();
+        CopyOnWriteArrayListDemo concurrentModificationExceptionDemo = new CopyOnWriteArrayListDemo();
         concurrentModificationExceptionDemo.start();
         Iterator iterator = list.iterator();
         while (iterator.hasNext()) {

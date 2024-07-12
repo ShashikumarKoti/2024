@@ -12,7 +12,7 @@ public class PartitionByExample {
         List<Employee> employeeList = Arrays.asList(new Employee("Tom Jones", 45),
                 new Employee("Harry Major", 25),
                 new Employee("Ethan Hardy", 65),
-                new Employee("Nancy Smith", 22),
+                new Employee("Nancy Smith", 36),
                 new Employee("Deborah Sprightly", 29));
 
         Map<Boolean, List<Employee>> booleanListMap = employeeList.stream().collect(Collectors.partitioningBy(employee -> employee.getAge() > 35));
@@ -24,5 +24,6 @@ public class PartitionByExample {
         System.out.println("=========================================");
         LinkedHashMap<Boolean, List<Employee>> booleanListLinkedHashMap = booleanListMap.entrySet().stream().filter(map -> map.getKey().equals(true)).collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
         System.out.println(booleanListLinkedHashMap);
+
     }
 }

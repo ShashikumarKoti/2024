@@ -4,6 +4,7 @@ import java.text.DecimalFormat;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 public class CollectingAndThenExample {
@@ -16,12 +17,19 @@ public class CollectingAndThenExample {
                 new Person("Rohit", 35, 70000.0)
         );
 
-        String personName = personList.stream().collect(Collectors.collectingAndThen(Collectors.maxBy(Comparator.comparing(Person::getSalary)),
+        Optional<Person> maxSalary = personList.stream().max(Comparator.comparing(Person::getSalary));
+        System.out.println(maxSalary.get());
+
+        String personName = personList.stream().collect(Collectors.collectingAndThen(
+                Collectors.maxBy(Comparator.comparing(Person::getSalary)),
                 person -> person.isPresent() ? person.get().getName() : "None"));
         System.out.println(personName);
 
+        Double collect = personList.stream().collect(Collectors.averagingDouble(Person::getSalary));
+        System.out.println(collect);
 
-        String averageSalary = personList.stream().collect(Collectors.collectingAndThen(Collectors.averagingDouble(Person::getSalary),
+        String averageSalary = personList.stream().collect(Collectors.collectingAndThen(
+                Collectors.averagingDouble(Person::getSalary),
                 emp -> new DecimalFormat("'$'0.00").format(emp)));;
         System.out.println(averageSalary);
 
