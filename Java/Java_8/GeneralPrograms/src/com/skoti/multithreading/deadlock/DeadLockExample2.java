@@ -1,7 +1,5 @@
 package com.skoti.multithreading.deadlock;
 
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
 
 public class DeadLockExample2 {
 

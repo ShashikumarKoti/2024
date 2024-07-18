@@ -4,8 +4,8 @@ import java.util.concurrent.locks.Lock;
 
 public class Runnable2 implements Runnable {
 
-    private Lock lock1 = null;
-    private Lock lock2 = null;
+    private final Lock lock1;
+    private final Lock lock2;
 
     public Runnable2(Lock lock1, Lock lock2) {
         this.lock1 = lock1;

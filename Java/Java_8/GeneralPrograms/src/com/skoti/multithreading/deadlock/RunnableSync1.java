@@ -2,8 +2,8 @@ package com.skoti.multithreading.deadlock;
 
 public class RunnableSync1 implements Runnable{
 
-    private Object object1 = null;
-    private Object object2 = null;
+    private final Object object1;
+    private final Object object2;
 
     public RunnableSync1(Object object1, Object object2) {
         this.object1 = object1;
