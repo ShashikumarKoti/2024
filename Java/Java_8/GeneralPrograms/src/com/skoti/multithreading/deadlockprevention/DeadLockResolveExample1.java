@@ -1,10 +1,11 @@
-package com.skoti.multithreading.deadlock;
+package com.skoti.multithreading.deadlockprevention;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class DeadLockResolveExample1 {
 
+    //Approach 1: Lock reordering
     public static void main(String[] args) {
 
         Lock reentrantLock1 = new ReentrantLock();

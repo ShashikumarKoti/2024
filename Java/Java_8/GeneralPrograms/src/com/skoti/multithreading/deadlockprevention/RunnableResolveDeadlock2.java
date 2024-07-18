@@ -1,4 +1,4 @@
-package com.skoti.multithreading.deadlock;
+package com.skoti.multithreading.deadlockprevention;
 
 import java.util.concurrent.locks.Lock;
 
