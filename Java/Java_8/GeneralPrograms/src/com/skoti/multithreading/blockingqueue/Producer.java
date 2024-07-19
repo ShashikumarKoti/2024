@@ -16,6 +16,7 @@ public class Producer implements Runnable {
             long timeMillis = System.currentTimeMillis();
             try {
                 this.blockingQueue.put("" + timeMillis);
+                System.out.println(Thread.currentThread().getName() + " produced " + timeMillis);
             } catch (InterruptedException e) {
                 System.out.println("Producer was interrupted");
             }
