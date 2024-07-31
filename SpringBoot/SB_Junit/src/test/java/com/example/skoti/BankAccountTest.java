@@ -33,6 +33,14 @@ public class BankAccountTest {
         bankAccount.deposit(50.0);
         assertEquals(150, bankAccount.getBalance());
     }
+    @Test
+    public void depositNegativeTest() {
+
+        //calling real method as we have used spy to bankAccount object
+        bankAccount.deposit(-50.0);
+        assertEquals(100, bankAccount.getBalance());
+    }
+
 
     @Test
     public void withdrawTest() {
@@ -40,6 +48,20 @@ public class BankAccountTest {
         bankAccount.withdraw(50);
         assertEquals(50, bankAccount.getBalance());
     }
+
+    @Test
+    public void withdrawNegativeTest() {
+        //calling real method as we have used spy to bankAccount object
+        bankAccount.withdraw(700);
+        assertEquals(100, bankAccount.getBalance());
+    }
+    @Test
+    public void withdrawNegativeTest2() {
+        //calling real method as we have used spy to bankAccount object
+        bankAccount.withdraw(-10);
+        assertEquals(100, bankAccount.getBalance());
+    }
+
 
     @Test
     public void withdrawWithStubTest() {
