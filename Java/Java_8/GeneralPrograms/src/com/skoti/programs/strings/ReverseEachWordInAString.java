@@ -16,12 +16,11 @@ public class ReverseEachWordInAString {
         String[] splitString = word.split(" ");
         StringBuilder reversedString = new StringBuilder();
         for (String s : splitString) {
-            char[] eachWordArray = s.toCharArray();
-            String reversedWord = "";
+            String[] eachWordArray = s.split("");
             for (int j = eachWordArray.length - 1; j >= 0; j--) {
                 reversedString.append(eachWordArray[j]);
             }
-            reversedString.append(reversedWord).append(" ");
+            reversedString.append(" ");
 
         }
         return reversedString.toString();
