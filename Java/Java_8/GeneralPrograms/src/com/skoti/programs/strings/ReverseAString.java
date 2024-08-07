@@ -5,7 +5,14 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class ReverseAString {
-
+    /*
+    (reverse("bject")) + O => tcejbO
+    ((reverse("ject")) + b) + O => tcejb
+    (((reverse("ect")) + j) + b) + O => tcej
+    ((((reverse("ct")) + e) + j) + b)+ O => tce
+    (((((reverse("t")) + c) + e) + j) +b) + O => tc
+    //return t
+     */
     public static void main(String[] args) {
 
         reverseUsingJava8("Shashi kumar");
@@ -39,3 +46,4 @@ public class ReverseAString {
     }
 
 }
+
