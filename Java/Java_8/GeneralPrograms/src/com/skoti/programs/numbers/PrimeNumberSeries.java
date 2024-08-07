@@ -14,6 +14,21 @@ public class PrimeNumberSeries {
         System.out.println(primeNumbersList);
         checkPrime(19);
         primeNumberSeries(20);
+        System.out.println();
+        boolean isPrime = primeNumbersUsingRecursion(19, 2);
+        System.out.println(isPrime);
+    }
+
+    private static boolean primeNumbersUsingRecursion(int num, int i) {
+            if(num <=2)
+                return (num==2) ? true : false;
+            if (num % i==0)
+                return false;
+            if (i*i > num)
+                return true;
+            return primeNumbersUsingRecursion(num, i+1);
+
+
     }
 
     private static void primeNumberSeries(int series) {
