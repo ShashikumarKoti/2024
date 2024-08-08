@@ -1,6 +1,5 @@
 package com.skoti.programs.numbers;
 
-import java.util.Random;
 import java.util.stream.IntStream;
 
 public class CheckPrimeNumber {
