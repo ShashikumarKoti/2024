@@ -26,6 +26,11 @@ public class MappingExample {
         Optional<Integer> maxAge = personList.stream().collect(Collectors.mapping(Person::getAge, Collectors.maxBy(Integer::compareTo)));
         System.out.println(maxAge.get());
 
+        String collected = personList.stream().collect(Collectors.collectingAndThen(
+                Collectors.maxBy(Comparator.comparing(Person::getAge)), per -> per.isPresent() ? per.get().getName() : "None")
+        );
+        System.out.println(collected);
+
 
     }
 }
