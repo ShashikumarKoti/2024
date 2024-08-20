@@ -6,9 +6,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ResourceController {
 
-
     @GetMapping("/")
-    public String greet() {
+    public String home() {
         return "No Authentication";
     }
 
