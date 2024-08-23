@@ -1,0 +1,22 @@
+Featuers/Advantages of API gateway:
+1. Routing: Used as an absraction layer for URLs...
+		i.e, frontend/client will call apigateway and apigateway will route request to appropriate services
+		Any change in location/url of microservices, will not affect the client. Updating apigateway with modified url is ONLY required.
+2. We can have different apigateway for different clients
+		i.e, for web browser, mobile and 3rd party apps we can have separate webApiGateway. MobileGateway and publicApiGateway and send responses accordingly.
+3. Protocal translation:
+		i.e, convert https request to http/snmp/amqp/gRPC etc.
+4. Security
+5. Auditing : any request/reponse passing through api gateway can be logged.
+
+
+Drawbacks of API gateway:
+1. Complexity : by time apigateway complexity will increase. As we need to map token, mapping request/response of each client etc for individual microservice.
+2. Latency: as request comes from apigateway and then directed to microservice, there will be some latency in response time.
+3. One point failure: apigateway needs to Highly Available/Highly fault tolearnt all the time. If it is down then all clients are implacted as it is a single entry point to all microservice
+
+API gateway providers:
+1. Netflix Zuul
+2. Spring Cloud Gateway
+
+Netflix Zuul:

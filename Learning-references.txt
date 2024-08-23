@@ -1,0 +1,110 @@
+Content of docker file ?
+ https://www.geeksforgeeks.org/how-to-dockerize-a-spring-boot-application-with-maven/
+Springboot JPA
+ https://www.javatpoint.com/spring-boot-jpa
+Spring Web client
+ https://www.geeksforgeeks.org/spring-boot-webclient-with-example/
+How singleton request helps in managing thousands of requests in springboot  ? ThreadLocal will help here
+ https://medium.com/@hasanli.vusala.73/how-does-singleton-bean-serve-multiple-requests-at-the-same-time-in-spring-f4c9d797dec9 
+Explain components of Kafka. How does Kafka work. Discuss architecture of Kafka.
+Springboot internal process during startup?
+Project explaination
+What is Database connection pooling
+Can you explain some of the core differences between Spring Boot and traditional Spring frameworks?
+  https://medium.com/@sureshkrishna75525/spring-vs-spring-boot-10-key-differences-for-a-comprehensive-comparison-1fe2442fcc02
+  https://anywhere.epam.com/en/blog/spring-boot-vs-spring
+  https://rollbar.com/blog/spring-vs-spring-boot-whats-the-difference/
+How do you decide when to use Oracle vs. MongoDB for a project?
+  https://www.astera.com/type/blog/mongodb-vs-sql-server/#:~:text=Most%20RDBMS%20cannot%20keep%20data,gives%20a%20major%20performance%20boost.
+  https://www.sprinkledata.com/blogs/mongodb-vs-oracle-a-comparative-analysis-of-two-leading-database-systems  
+What are the main benefits and challenges of using microservices architecture?
+  https://www.atlassian.com/microservices/cloud-computing/advantages-of-microservices
+Can you explain the process you follow to break a monolithic application into microservices?
+  https://www.linkedin.com/pulse/how-break-monolith-microservices-data-ins-technology-llc-x3gef/
+How do you ensure the security of your Spring Boot applications?
+  https://javatechonline.com/how-to-implement-security-in-spring-boot-project/ 
+Thread Local - https://youtu.be/sjMe9aecW_A?si=IuPfEfsITtd1Pglv  
+
+Multi-threading:
+https://www.youtube.com/watch?v=mTGdtC9f4EU&list=PLL8woMHwr36EDxjUoCzboZjedsnhLP1j4
+https://jenkov.com/tutorials/java-concurrency/thread-pools.html
+
+JWT token reference	
+https://www.learncodewithdurgesh.com/blogs/jwt-authentication-with-spring-boot-31	
+
+https://www.youtube.com/watch?v=3cgZbACBpxI&list=PLL8woMHwr36EDxjUoCzboZjedsnhLP1j4&index=17
+
+
+Transaction management
+https://www.youtube.com/watch?v=IVHcWTegWyM
+https://www.youtube.com/watch?v=a7u_8Apd6f4
+
+Transaction Isolation:
+https://www.youtube.com/watch?v=7rNiIavYB2w
+
+Isolation:
+1.Repeatable-Read:
+	Data modified in txn1 will not be visible to txn2 until the txn2 commits or comes out of the transaction.
+	
+2.Read-Uncommmitted:
+	Data modified in txn1 and which is not yet committed. The same modified data is visible to txn2...which leads to data inconsistency.
+	
+3.Read-committed:
+	Data modified in txn1 and which is Committed. Only the committed data is visible in txn2.
+	
+4.Serializable:
+	
+	
+Springboot with JDBC:
+https://www.geeksforgeeks.org/spring-boot-jdbc/
+
+
+Database:
+ACID: https://www.javatpoint.com/acid-properties-in-dbms
+Indexes: https://www.javatpoint.com/indexing-in-dbms
+
+Docker:
+https://www.youtube.com/watch?v=3c-iBn73dDE
+
+kubernetes:
+https://www.youtube.com/watch?v=X48VuDVv0do&t=71s - Nana
+https://www.youtube.com/watch?v=dfxrdoEQe00&list=PLdpzxOOAlwvJdsW6A0jCz_3VaANuFMLpc - Abhishek
+
+Rule engine:
+MVEL rule engine
+https://medium.com/@er.rameshkatiyar/implement-your-own-rule-engine-java8-springboot-mvel-5928474e1ba5
+
+Drools engine:
+https://medium.com/javarevisited/spring-boot-drools-rule-engine-example-965eea437ee9
+
+IntegrationTest:
+https://dzone.com/articles/integration-testing-in-spring-boot-1
+https://www.baeldung.com/spring-boot-testing
+  
+  
+aws cassaandra for audit and notifications
+rule engine mvel expression
+
+Spring security:
+https://www.youtube.com/watch?v=iyXne7dIn7U&list=PLqq-6Pq4lTTYTEooakHchTGglSvkZAjnE&index=4
+
+Mistakes done in Springboot
+https://www.youtube.com/watch?v=W-tz6e-bBGs
+
+
+OAuth 2.0
+https://datatracker.ietf.org/doc/html/rfc6749#section-4.2.1
+https://www.javainuse.com/misc/oauth-interview-questions
+https://www.javaguides.net/2024/06/oauth-2-interview-questions.html
+
+Maveric git hub:
+https://github.com/MAVERIC-ThinkNXT-LIMITED/topics-materials?tab=readme-ov-file
+
+SOLID princliples:
+https://www.freecodecamp.org/news/solid-principles-explained-in-plain-english/
+
+kafka crash course
+https://www.youtube.com/watch?v=ZJJHm_bd9Zo
+
+Completable future:
+https://dzone.com/articles/20-examples-of-using-javas-completablefuture 
