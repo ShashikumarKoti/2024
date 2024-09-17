@@ -8,12 +8,11 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
+import reactor.core.Disposable;
+import reactor.core.publisher.Flux;
 
-import java.time.Duration;
-import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
-import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 @Service
 public class EmployeeService {
@@ -29,18 +28,15 @@ public class EmployeeService {
         EmployeeResponse employeeResponse = modelMapper.map(employeeById, EmployeeResponse.class);
 
         AddressResponse addressResponse = webClient.get().uri("/address/" + id).retrieve().bodyToMono(AddressResponse.class).block();
-        for (int i=0;i<100;i++) {
-            System.out.println("Continuing flow "  +i);
-        }
         employeeResponse.setAddressResponse(addressResponse);
 
         return employeeResponse;
     }
 
-    public List<EmployeeResponse> getAllEmployees() {
-        List<Employee> employeeList = EmployeeRepo.getAllEmployees();
-        List<EmployeeResponse> employeeResponseList = employeeList.stream().
-                map(emp -> modelMapper.map(emp, EmployeeResponse.class)).toList();
+    public Flux<EmployeeResponse> getAllEmployees() {
+        Flux<Employee> employeeList = EmployeeRepo.getAllEmployees();
+        List<EmployeeResponse> employeeResponseList = employeeList.toStream().map(emp -> modelMapper.map(emp, EmployeeResponse.class)).toList();
+
         List<AddressResponse> addressResponseList = webClient.get()
                 .uri("/addresses")
                 .retrieve()
@@ -49,13 +45,11 @@ public class EmployeeService {
                 .block();
 
         employeeResponseList.forEach(
-                employee -> {
-                    assert addressResponseList != null;
-                    employee.setAddressResponse(
-                            addressResponseList.stream().filter( address -> address.getId()==employee.getId()).findAny().get());
+                emp -> {
+                    emp.setAddressResponse(
+                            addressResponseList.stream().filter( address -> address.getId()==emp.getId()).findAny().get());
                 }
         );
-
-        return employeeResponseList;
+        return Flux.fromIterable(employeeResponseList);
     }
 }

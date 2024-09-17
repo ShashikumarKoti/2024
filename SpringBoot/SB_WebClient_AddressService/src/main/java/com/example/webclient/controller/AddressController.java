@@ -18,7 +18,7 @@ public class AddressController {
     private AddressService addressService;
 
     @GetMapping("/address/{employeeId}")
-    public ResponseEntity<AddressResponse> getAddressByEmployeeId(@PathVariable("employeeId") int employeeId) throws InterruptedException {
+    public ResponseEntity<AddressResponse> getAddressByEmployeeId(@PathVariable("employeeId") int employeeId)  {
         AddressResponse addressResponse = addressService.findAddressByEmpId(employeeId);
         return ResponseEntity.status(HttpStatus.OK).body(addressResponse);
 

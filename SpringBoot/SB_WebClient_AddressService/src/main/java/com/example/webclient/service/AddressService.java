@@ -16,9 +16,8 @@ public class AddressService {
     @Autowired
     private ModelMapper modelMapper;
 
-    public AddressResponse findAddressByEmpId(int empId) throws InterruptedException {
+    public AddressResponse findAddressByEmpId(int empId)  {
         Address addressByEmpId = AddressRepo.findAddressByEmpId(empId);
-        Thread.sleep(5000);
         return modelMapper.map(addressByEmpId, AddressResponse.class);
     }
 
