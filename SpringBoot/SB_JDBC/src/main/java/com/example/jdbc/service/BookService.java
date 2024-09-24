@@ -5,6 +5,7 @@ import com.example.jdbc.repo.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -21,5 +22,13 @@ public class BookService {
         System.out.println("book id in service is: " + bookID);
         return bookRepository.findByID(bookID);
 
+    }
+
+    public List<Book> findAllBooks() {
+        return bookRepository.getAllBooks();
+    }
+
+    public int updateBook(Book book, Long id) {
+        return bookRepository.update(book, id);
     }
 }

@@ -18,9 +18,6 @@ public class BookRepository {
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
-    @Autowired
-    private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
-
     public int save(Book book) {
         String query = "insert into Books (name, price) values (?,?)";
          return jdbcTemplate.update(query, book.getName(), book.getPrice());
@@ -52,5 +49,15 @@ public class BookRepository {
 //                ))
 //        );
 //    }
+
+    public List<Book> getAllBooks() {
+        String query = "select * from Books";
+        return jdbcTemplate.query(query, BOOK_ROW_MAPPER);
+    }
+
+    public int update(Book book, Long id) {
+        String query = "update Books set price = ? where id = ?";
+        return jdbcTemplate.update(query, book.getPrice(), id);
+    }
 
 }
