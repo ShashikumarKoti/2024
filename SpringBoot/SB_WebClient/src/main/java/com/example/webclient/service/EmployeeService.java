@@ -46,6 +46,7 @@ public class EmployeeService {
 
         employeeResponseList.forEach(
                 emp -> {
+                    assert addressResponseList != null;
                     emp.setAddressResponse(
                             addressResponseList.stream().filter( address -> address.getId()==emp.getId()).findAny().get());
                 }

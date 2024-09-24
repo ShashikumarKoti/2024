@@ -1,0 +1,5 @@
+--INSERT INTO BOOKS (name, price) values ("SB With JDBC", 449.50);
+--INSERT INTO BOOKS (name, price) values ("SB_MongoDB", 559.50);
+--INSERT INTO BOOKS (name, price) values ("SB_Security", 999.50);
+--INSERT INTO BOOKS (name, price) values ("SB_Gateway", 799.50);
+--INSERT INTO BOOKS (name, price) values ("SB_AOP", 249.50);
