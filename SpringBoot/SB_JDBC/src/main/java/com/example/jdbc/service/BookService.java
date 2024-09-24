@@ -5,6 +5,8 @@ import com.example.jdbc.repo.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 @Service
 public class BookService {
 
@@ -13,5 +15,11 @@ public class BookService {
 
     public int persistBook(Book book) {
        return bookRepository.save(book);
+    }
+
+    public Book findById(Long bookID) {
+        System.out.println("book id in service is: " + bookID);
+        return bookRepository.findByID(bookID);
+
     }
 }

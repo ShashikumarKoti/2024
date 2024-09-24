@@ -3,7 +3,13 @@ package com.example.jdbc.repo;
 import com.example.jdbc.model.Book;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
+import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
+import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.stereotype.Repository;
+
+import java.util.List;
+import java.util.Optional;
 
 
 @Repository
@@ -12,8 +18,39 @@ public class BookRepository {
     @Autowired
     private JdbcTemplate jdbcTemplate;
 
+    @Autowired
+    private NamedParameterJdbcTemplate namedParameterJdbcTemplate;
+
     public int save(Book book) {
-         return jdbcTemplate.update("insert into Books (name, price) values (?,?)", book
-                .getName(), book.getPrice());
+        String query = "insert into Books (name, price) values (?,?)";
+         return jdbcTemplate.update(query, book.getName(), book.getPrice());
     }
+
+    public Book findByID(Long id) {
+        String query = "select * from Books where id = ?";
+        return jdbcTemplate.queryForObject(query,BOOK_ROW_MAPPER,id);
+    }
+
+    private static final RowMapper<Book> BOOK_ROW_MAPPER = (rs, rowNum) -> {
+        Book book = new Book();
+        book.setId(rs.getLong("id"));
+        book.setName(rs.getString("name"));
+        book.setPrice(rs.getBigDecimal("price"));
+
+        return book;
+    };
+
+// Approach-2 to get book by id
+//    public Optional<Book> findByID(Long id) {
+//        return namedParameterJdbcTemplate.queryForObject("select * from Books where id = :id",
+//                new MapSqlParameterSource("id", id),
+//        (rs,rowNum) ->
+//                Optional.of(new Book(
+//                        rs.getLong("id"),
+//                rs.getString("name"),
+//                rs.getBigDecimal("price")
+//                ))
+//        );
+//    }
+
 }
