@@ -15,8 +15,4 @@ public class Book {
     private String name;
     private BigDecimal price;
 
-    public Book(String name, BigDecimal price) {
-        this.name = name;
-        this.price = price;
-    }
 }
