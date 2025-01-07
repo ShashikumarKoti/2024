@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = ' - Welcome to Angular World';
+  data = "I am dynamic data"
+  getFunction() {
+    return "Received dynamic data from a function"
+  }
 }

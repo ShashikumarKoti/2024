@@ -21,7 +21,7 @@ resilience4j:
         minimumNumberOfCalls: 5
         automaticTransitionFromOpenToHalfOpenEnabled: true
         waitDurationInOpenState: 5s
-        permittedNumberOfCallsInHalfOpenState: 5
+        permittedNumberOfCallsInHalfOpenState: 3
         slidingWindowSize: 10
         slidingWindowType: COUNT_BASED
 
@@ -30,7 +30,7 @@ resilience4j:
     instances:
       userService:
         maxRetryAttempts: 5
-        waitDuration: 1s
+        waitDuration: 5s
 
 
 
